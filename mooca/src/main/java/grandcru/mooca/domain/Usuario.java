@@ -5,6 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.List;
 
@@ -93,5 +94,11 @@ public class Usuario implements UserDetails {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public void setDataNascimento(LocalDate of) {
+    }
+
+    public void setAtivo(boolean b) {
     }
 }
